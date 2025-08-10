@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: talinth
+    env: ruby
+    plan: free
+    branch: main
+    buildCommand: |
+      bundle install
+      bundle exec rake assets:precompile db:migrate
+    startCommand: bundle exec puma -C config/puma.rb
+    envVars:
+      - key: RAILS_ENV
+        value: production
+      - key: RAILS_MASTER_KEY
+        sync: false
+      - key: TALINTH_DATABASE_PASSWORD
+        sync: false
+      - key: DATABASE_URL
+        value: postgresql://talinth:${TALINTH_DATABASE_PASSWORD}@<db-host>:5432/talinth_production
