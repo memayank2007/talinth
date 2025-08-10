@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Talinth – B2B Hiring Platform</title>
+    <meta
+      name="description"
+      content="AI-powered B2B hiring platform: automated screening, structured interviews, and actionable analytics."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="container nav">
+        <div class="brand">
+          <div class="logo">T</div>
+          <div>Talinth</div>
+          <span
+            class="chip"
+            style="margin-left: 8px; display: none"
+            id="chip-b2b"
+            >B2B Hiring Platform</span
+          >
+        </div>
+        <nav class="nav-links">
+          <a href="#features">Features</a>
+          <a href="#how">How it works</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#security">Security</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <div class="nav-ctas">
+          <a class="btn outline" href="#">Sign in</a>
+          <a class="btn" href="#contact">Book a demo</a>
+          <button
+            class="menu"
+            aria-label="Toggle menu"
+            onclick="document.getElementById('mobile').hidden = !document.getElementById('mobile').hidden"
+          >
+            ☰
+          </button>
+        </div>
+      </div>
+      <div id="mobile" hidden class="container" style="padding-bottom: 12px">
+        <div style="display: grid; gap: 8px; margin-top: 8px">
+          <a href="#features">Features</a>
+          <a href="#how">How it works</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#security">Security</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <span class="badge">🚀 Hire 3× faster</span>
+          <h1>
+            The AI‑powered hiring platform
+            <span style="color: var(--muted); font-weight: 500; display: block"
+              >built for B2B teams</span
+            >
+          </h1>
+          <p>
+            Automate screening, standardize interviews, and make confident,
+            data‑backed decisions — all in one streamlined workspace.
+          </p>
+          <div class="actions">
+            <a class="btn" href="#pricing">Start free</a>
+            <a class="btn outline" href="#contact">Watch 2‑min demo</a>
+          </div>
+          <div class="trust">
+            <span>🛡 SOC 2 ready</span>
+            <span>🌍 GDPR compliant</span>
+            <span>🔐 SSO/SAML</span>
+          </div>
+        </div>
+        <div class="card form-card">
+          <img
+            src="https://www.oracle.com/a/ocom/img/rc98-oci-free-tier.png"
+            alt="AI-powered hiring platform preview"
+            style="max-width: 100%; border-radius: 8px"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Proof -->
+    <section class="proof">
+      <div class="container proof-grid">
+        <div class="card proof-item">
+          <div class="proof-metric">-60%</div>
+          <div class="proof-label">Screening time</div>
+        </div>
+        <div class="card proof-item">
+          <div class="proof-metric">+35%</div>
+          <div class="proof-label">Qualified pipeline</div>
+        </div>
+        <div class="card proof-item">
+          <div class="proof-metric">99.9%</div>
+          <div class="proof-label">Uptime (SLA)</div>
+        </div>
+        <div class="card proof-item">
+          <div class="proof-metric">GDPR</div>
+          <div class="proof-label">& SOC 2 Ready</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section id="features" class="section">
+      <div class="container">
+        <div style="text-align: center; margin-bottom: 28px">
+          <h2>Everything you need to hire better</h2>
+          <p class="lead">
+            Purpose‑built for B2B — from role‑based scorecards to
+            enterprise‑grade security and analytics.
+          </p>
+        </div>
+
+        <div class="grid features">
+          <div class="card feature-card">
+            <div class="feature-title">🤖 AI Interviewer</div>
+            <div class="feature-desc">
+              Screen candidates 24/7 with structured, bias‑aware interviews and
+              instant summaries.
+            </div>
+          </div>
+          <div class="card feature-card">
+            <div class="feature-title">👥 Team Collaboration</div>
+            <div class="feature-desc">
+              Shared feedback, scorecards, and hiring funnels for recruiters &
+              managers.
+            </div>
+          </div>
+          <div class="card feature-card">
+            <div class="feature-title">⏱ Faster Time‑to‑Hire</div>
+            <div class="feature-desc">
+              Automated scheduling handles time zones, reminders, and
+              rescheduling.
+            </div>
+          </div>
+          <div class="card feature-card">
+            <div class="feature-title">📈 Analytics</div>
+            <div class="feature-desc">
+              Pipeline health, drop‑off insights, and conversion tracking out of
+              the box.
+            </div>
+          </div>
+        </div>
+
+        <div id="how" class="grid steps" style="margin-top: 32px">
+          <div class="card step-card">
+            <span class="step-badge">Step 1</span>
+            <h3>Connect ATS & calendar</h3>
+            <p class="feature-desc">
+              Sync Greenhouse/Lever, set your rubric, and enable SSO for your
+              team.
+            </p>
+          </div>
+          <div class="card step-card">
+            <span class="step-badge">Step 2</span>
+            <h3>Invite candidates or share link</h3>
+            <p class="feature-desc">
+              Automated scheduling handles time zones, reminders, and
+              rescheduling.
+            </p>
+          </div>
+          <div class="card step-card">
+            <span class="step-badge">Step 3</span>
+            <h3>Review AI summaries & scorecards</h3>
+            <p class="feature-desc">
+              Calibrated scoring and structured notes help you move faster with
+              less bias.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id="pricing" class="section" style="background: #fff">
+      <div class="container">
+        <div style="text-align: center; margin-bottom: 28px">
+          <h2>Simple, scalable pricing</h2>
+          <p class="lead">Start free. Upgrade as you hire.</p>
+        </div>
+
+        <div class="grid pricing">
+          <div class="card price-card">
+            <div
+              style="
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+              "
+            >
+              <h3>Starter</h3>
+            </div>
+            <div class="price">Free</div>
+            <p class="feature-desc">For small teams getting started</p>
+            <ul class="bullets">
+              <li>✓ 100 interviews/mo</li>
+              <li>✓ Basic ATS sync</li>
+              <li>✓ Email support</li>
+            </ul>
+            <a class="btn block" href="#">Start free</a>
+          </div>
+
+          <div class="card price-card most-popular">
+            <div
+              style="
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+              "
+            >
+              <h3>Growth</h3>
+              <span class="chip">Most popular</span>
+            </div>
+            <div class="price">$199/mo</div>
+            <p class="feature-desc">Scale your hiring operations</p>
+            <ul class="bullets">
+              <li>✓ 1,500 interviews/mo</li>
+              <li>✓ Advanced analytics</li>
+              <li>✓ Priority support</li>
+            </ul>
+            <a class="btn block" href="#">Start trial</a>
+          </div>
+
+          <div class="card price-card">
+            <div
+              style="
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+              "
+            >
+              <h3>Enterprise</h3>
+            </div>
+            <div class="price">Custom</div>
+            <p class="feature-desc">Security, SSO, custom SLAs</p>
+            <ul class="bullets">
+              <li>✓ Unlimited interviews</li>
+              <li>✓ SSO/SAML, SCIM</li>
+              <li>✓ Dedicated CSM</li>
+            </ul>
+            <a class="btn block" href="#contact">Talk to sales</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Security -->
+    <section id="security" class="section">
+      <div class="container security-grid grid">
+        <div>
+          <h2>Enterprise‑grade security</h2>
+          <p class="lead">
+            Data encrypted in transit and at rest, regional hosting, audit logs,
+            and granular access controls. SSO/SAML, SCIM, and automated DPA for
+            peace of mind.
+          </p>
+          <ul class="bullets" style="margin-top: 10px">
+            <li>✓ Row‑level permissions & role‑based access</li>
+            <li>✓ Hourly backups, 30‑day retention</li>
+            <li>✓ Private VPC & IP allow‑listing</li>
+          </ul>
+        </div>
+        <div class="card" style="padding: 20px">
+          <h3 style="margin-top: 0">Compliance highlights</h3>
+          <div class="compliance">
+            <div>SOC 2 (Type II)</div>
+            <div>GDPR</div>
+            <div>ISO 27001</div>
+            <div>DSAR ready</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section cta">
+      <div class="container">
+        <h2>Ready to turn hiring into a growth engine?</h2>
+        <p class="lead">
+          Start free, or book a 20‑minute demo to see how Talinth fits your
+          workflow.
+        </p>
+        <div class="actions" style="justify-content: center">
+          <a class="btn" href="#pricing">Start free</a>
+          <a class="btn outline" href="#contact">Book a demo</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section" style="background: #fff">
+      <div class="container contact">
+        <div class="card" style="padding: 20px">
+          <h3 style="margin: 0 0 10px">Talk to our team</h3>
+          <form
+            class="form"
+            onsubmit="event.preventDefault(); alert('Message sent. We\'ll get back to you soon.');"
+          >
+            <div class="grid" style="grid-template-columns: 1fr 1fr; gap: 10px">
+              <input class="input" placeholder="First name" />
+              <input class="input" placeholder="Last name" />
+            </div>
+            <input class="input" type="email" placeholder="Work email" />
+            <input class="input" placeholder="Company" />
+            <textarea
+              class="textarea"
+              placeholder="How can we help?"
+            ></textarea>
+            <label
+              style="
+                display: flex;
+                align-items: flex-start;
+                gap: 8px;
+                font-size: 12px;
+                color: #64748b;
+              "
+            >
+              <input type="checkbox" style="margin-top: 3px" /> I agree to
+              receive product updates and marketing emails.
+            </label>
+            <button class="btn" type="submit">Send message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <div class="brand">
+              <div class="logo">T</div>
+              <div>Talinth</div>
+            </div>
+            <p style="color: var(--muted); margin-top: 10px">
+              AI‑powered interviews, ATS sync, and analytics for modern B2B
+              teams.
+            </p>
+          </div>
+          <div class="footer-col">
+            <h4>Product</h4>
+            <ul>
+              <li><a href="#features">Features</a></li>
+              <li><a href="#pricing">Pricing</a></li>
+              <li><a href="#security">Security</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Legal</h4>
+            <ul>
+              <li><a href="#">Privacy</a></li>
+              <li><a href="#">Terms</a></li>
+              <li><a href="#">DPA</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footbar">
+          <span>© <span id="year"></span> Talinth. All rights reserved.</span>
+          <div style="display: flex; gap: 12px">
+            <a href="#">LinkedIn</a>
+            <a href="#">Twitter/X</a>
+            <a href="#">Support</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+      // Show B2B chip on larger screens (progressive enhancement)
+      if (window.matchMedia("(min-width: 960px)").matches) {
+        var chip = document.getElementById("chip-b2b");
+        if (chip) chip.style.display = "inline-flex";
+      }
+    </script>
+  </body>
+</html>
