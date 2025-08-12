@@ -12,3 +12,7 @@
 //= link_tree ../../../vendor/assets/vendor .woff
 //= link_tree ../../../vendor/assets/vendor .woff2
 //= link_tree ../../../vendor/assets/vendor .ttf
+//= link_tree ../../../vendor/assets/img .png
+//= link_tree ../../../vendor/assets/img .jpg
+//= link_tree ../../../vendor/assets/img .svg
+//= link_tree ../../../vendor/assets/img .webp
