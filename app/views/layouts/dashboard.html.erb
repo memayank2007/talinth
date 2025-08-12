@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= content_for(:title) || "Talinth" %></title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <link rel="icon" type="image/x-icon" href="../assets/img/favicon/favicon.ico" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet" />
+
+    <link rel="stylesheet" href="../assets/vendor/fonts/iconify-icons.css" />
+
+    <!-- Core CSS -->
+    <!-- build:css assets/vendor/css/theme.css  -->
+    <%= stylesheet_link_tag "css/core.css" %>
+    <%= stylesheet_link_tag "demo.css" %>
+
+    <!-- Vendors CSS -->
+    <%= stylesheet_link_tag "libs/perfect-scrollbar/perfect-scrollbar.css" %>
+
+
+    <!-- endbuild -->
+    <%= stylesheet_link_tag "libs/apex-charts/apex-charts.css" %>
+
+
+    <!-- Page CSS -->
+
+    <!-- Helpers -->
+    <%= javascript_include_tag "js/helpers.js", defer: true %>
+
+    <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
+
+    <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
+    <%= javascript_include_tag "config.js", defer: true %>
+
+
+    <%= yield :head %>
+
+    <%# Enable PWA manifest for installable apps (make sure to enable in config/routes.rb too!) %>
+    <%#= tag.link rel: "manifest", href: pwa_manifest_path(format: :json) %>
+
+    <link rel="icon" href="/icon.png" type="image/png">
+    <link rel="icon" href="/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/icon.png">
+
+    <%# Includes all stylesheet files in app/assets/stylesheets %>
+    <%= stylesheet_link_tag :app, "data-turbo-track": "reload" %>
+    <%= javascript_importmap_tags %>
+  </head>
+
+  <body>
+    <%= yield %>
+
+    <!-- Core JS -->
+    <%= javascript_include_tag "libs/jquery/jquery.js", defer: true %>
+
+    <%= javascript_include_tag "libs/popper/popper.js", defer: true %>
+    <%= javascript_include_tag "js/bootstrap.js", defer: true %>
+    <%= javascript_include_tag "libs/perfect-scrollbar/perfect-scrollbar.js", defer: true %>
+    <%= javascript_include_tag "js/menu.js", defer: true %>
+    <%= javascript_include_tag "libs/apex-charts/apexcharts.js", defer: true %>
+    <%= javascript_include_tag "main.js", defer: true %>
+    <%= javascript_include_tag "dashboards-analytics.js", defer: true %>
+
+
+    <!-- Place this tag before closing body tag for github widget button. -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+  </body>
+</html>
