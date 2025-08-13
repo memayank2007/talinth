@@ -1,0 +1,25 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  code: MyString
+  price_cents: 1
+  currency: MyString
+   monthly_interview_limit: 1
+  monthly_minutes_limit: 1
+   priority_support: false
+  custom_domain: false
+  features: 
+  status: 1
+
+two:
+  name: MyString
+  code: MyString
+  price_cents: 1
+  currency: MyString
+   monthly_interview_limit: 1
+  monthly_minutes_limit: 1
+   priority_support: false
+  custom_domain: false
+  features: 
+  status: 1

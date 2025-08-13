@@ -1,0 +1,2 @@
+json.extract! organization, :id, :name, :subdomain, :custom_domain, :logo_url, :primary_contact_name, :primary_contact_email, :phone, :industry, :size, :plan_id, :plan_expires_at, :max_users, :max_interviews_per_month, :billing_address, :city, :state, :zip, :country, :time_zone, :language, :ai_model, :branding_color, :status, :description, :created_at, :updated_at
+json.url organization_url(organization, format: :json)

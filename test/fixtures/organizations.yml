@@ -1,0 +1,53 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  subdomain: MyString
+  custom_domain: MyString
+  logo_url: MyString
+  primary_contact_name: MyString
+  primary_contact_email: MyString
+  phone: MyString
+  industry: MyString
+  size: 1
+  plan_id: MyString
+  plan_expires_at: 2025-08-12 23:21:49
+  max_users: 1
+  max_interviews_per_month: 1
+  billing_address: MyText
+  city: MyString
+  state: MyString
+  zip: MyString
+  country: MyString
+  time_zone: MyString
+  language: MyString
+  ai_model: MyString
+  branding_color: MyString
+  status: MyString
+  description: MyText
+
+two:
+  name: MyString
+  subdomain: MyString
+  custom_domain: MyString
+  logo_url: MyString
+  primary_contact_name: MyString
+  primary_contact_email: MyString
+  phone: MyString
+  industry: MyString
+  size: 1
+  plan_id: MyString
+  plan_expires_at: 2025-08-12 23:21:49
+  max_users: 1
+  max_interviews_per_month: 1
+  billing_address: MyText
+  city: MyString
+  state: MyString
+  zip: MyString
+  country: MyString
+  time_zone: MyString
+  language: MyString
+  ai_model: MyString
+  branding_color: MyString
+  status: MyString
+  description: MyText

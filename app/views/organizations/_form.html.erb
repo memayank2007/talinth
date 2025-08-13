@@ -1,0 +1,139 @@
+<div class="container-xxl flex-grow-1 container-p-y">
+  <%= form_with(model: organization) do |form| %>
+    <% if organization.errors.any? %>
+      <div style="color: red">
+        <h2><%= pluralize(organization.errors.count, "error") %> prohibited this organization from being saved:</h2>
+
+        <ul>
+          <% organization.errors.each do |error| %>
+            <li><%= error.full_message %></li>
+          <% end %>
+        </ul>
+      </div>
+    <% end %>
+
+    <div>
+      <%= form.label :name, style: "display: block" %>
+      <%= form.text_field :name %>
+    </div>
+
+    <div>
+      <%= form.label :subdomain, style: "display: block" %>
+      <%= form.text_field :subdomain %>
+    </div>
+
+    <div>
+      <%= form.label :custom_domain, style: "display: block" %>
+      <%= form.text_field :custom_domain %>
+    </div>
+
+    <div>
+      <%= form.label :logo_url, style: "display: block" %>
+      <%= form.text_field :logo_url %>
+    </div>
+
+    <div>
+      <%= form.label :primary_contact_name, style: "display: block" %>
+      <%= form.text_field :primary_contact_name %>
+    </div>
+
+    <div>
+      <%= form.label :primary_contact_email, style: "display: block" %>
+      <%= form.text_field :primary_contact_email %>
+    </div>
+
+    <div>
+      <%= form.label :phone, style: "display: block" %>
+      <%= form.text_field :phone %>
+    </div>
+
+    <div>
+      <%= form.label :industry, style: "display: block" %>
+      <%= form.text_field :industry %>
+    </div>
+
+    <div>
+      <%= form.label :size, style: "display: block" %>
+      <%= form.number_field :size %>
+    </div>
+
+    <div>
+      <%= form.label :plan_id, style: "display: block" %>
+      <%= form.text_field :plan_id %>
+    </div>
+
+    <div>
+      <%= form.label :plan_expires_at, style: "display: block" %>
+      <%= form.datetime_field :plan_expires_at %>
+    </div>
+
+    <div>
+      <%= form.label :max_users, style: "display: block" %>
+      <%= form.number_field :max_users %>
+    </div>
+
+    <div>
+      <%= form.label :max_interviews_per_month, style: "display: block" %>
+      <%= form.number_field :max_interviews_per_month %>
+    </div>
+
+    <div>
+      <%= form.label :billing_address, style: "display: block" %>
+      <%= form.textarea :billing_address %>
+    </div>
+
+    <div>
+      <%= form.label :city, style: "display: block" %>
+      <%= form.text_field :city %>
+    </div>
+
+    <div>
+      <%= form.label :state, style: "display: block" %>
+      <%= form.text_field :state %>
+    </div>
+
+    <div>
+      <%= form.label :zip, style: "display: block" %>
+      <%= form.text_field :zip %>
+    </div>
+
+    <div>
+      <%= form.label :country, style: "display: block" %>
+      <%= form.text_field :country %>
+    </div>
+
+    <div>
+      <%= form.label :time_zone, style: "display: block" %>
+      <%= form.text_field :time_zone %>
+    </div>
+
+    <div>
+      <%= form.label :language, style: "display: block" %>
+      <%= form.text_field :language %>
+    </div>
+
+    <div>
+      <%= form.label :ai_model, style: "display: block" %>
+      <%= form.text_field :ai_model %>
+    </div>
+
+    <div>
+      <%= form.label :branding_color, style: "display: block" %>
+      <%= form.text_field :branding_color %>
+    </div>
+
+    <div>
+      <%= form.label :status, style: "display: block" %>
+      <%= form.text_field :status %>
+    </div>
+
+    <div>
+      <%= form.label :description, style: "display: block" %>
+      <%= form.textarea :description %>
+    </div>
+
+    <div>
+      <%= form.submit %>
+    </div>
+  <% end %>
+</div>
